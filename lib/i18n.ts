@@ -1,0 +1,100 @@
+export type Lang = 'en' | 'ru'
+
+export const t = {
+  nav: {
+    work:    { en: 'Work',    ru: 'Работы' },
+    about:   { en: 'About',   ru: 'О нас' },
+    process: { en: 'Process', ru: 'Процесс' },
+    contact: { en: 'Contact', ru: 'Контакт' },
+    cta:     { en: 'Start a project', ru: 'Начать проект' },
+  },
+  hero: {
+    tag:          { en: 'Digital Studio · Almaty', ru: 'Диджитал Студия · Алматы' },
+    headline:     { en: 'Websites built\nto be noticed.', ru: 'Сайты, которые\nневозможно не заметить.' },
+    headlineAccent: { en: 'noticed.', ru: 'заметить.' },
+    sub:          { en: 'MTDev is an Almaty-based studio building premium digital experiences for businesses and startups. Seven people. One project at a time. Delivered in days, not months.', ru: 'MTDev — студия из Алматы. Мы создаём премиальные digital-продукты для бизнеса и стартапов. Семь специалистов. Один проект в работе. Готово за дни, а не месяцы.' },
+    ctaPrimary:   { en: 'View our work',  ru: 'Смотреть работы' },
+    ctaSecondary: { en: 'How we work →', ru: 'Как мы работаем →' },
+    scrollHint:   { en: 'Scroll', ru: 'Скролл' },
+    counter:      { en: '001 / 004', ru: '001 / 004' },
+  },
+  portfolio: {
+    label:  { en: 'Work',           ru: 'Работы' },
+    seeAll: { en: 'All projects →', ru: 'Все проекты →' },
+  },
+  services: {
+    label:    { en: 'What we do',    ru: 'Что мы делаем' },
+    headline: { en: 'The full stack, without the agency overhead.', ru: 'Полный стек — без раздутой команды.' },
+    items: [
+      { en: { title: 'Web Design',         desc: 'Interfaces built around clarity, hierarchy, and visual impact.' },
+        ru: { title: 'Веб-дизайн',         desc: 'Интерфейсы, построенные на ясности, иерархии и визуальном воздействии.' } },
+      { en: { title: 'Web Development',    desc: 'Production-grade code. Next.js, TypeScript, built to scale.' },
+        ru: { title: 'Разработка',         desc: 'Продакшн-код. Next.js, TypeScript, с расчётом на рост.' } },
+      { en: { title: 'Motion & Animation', desc: 'Scroll animations and interactions that enhance, never distract.' },
+        ru: { title: 'Анимация и motion',  desc: 'Анимации при скролле, которые дополняют опыт, а не мешают ему.' } },
+      { en: { title: 'E-commerce',         desc: 'Online stores built for real purchase flows — catalog to checkout.' },
+        ru: { title: 'E-commerce',         desc: 'Интернет-магазины с реальным циклом покупки — от каталога до оплаты.' } },
+      { en: { title: 'Web Apps & UI',      desc: 'Complex browser applications with interfaces users understand.' },
+        ru: { title: 'Веб-приложения',     desc: 'Сложные браузерные приложения с понятными интерфейсами.' } },
+    ],
+  },
+  process: {
+    label:    { en: 'How we work',           ru: 'Как мы работаем' },
+    headline: { en: 'Four steps. A few days.', ru: 'Четыре шага. Несколько дней.' },
+    steps: [
+      { en: { label: 'Brief & Discovery', desc: 'We learn your goals, audience, and constraints. One focused conversation is usually enough.' },
+        ru: { label: 'Бриф и погружение', desc: 'Узнаём ваши цели, аудиторию и ограничения. Обычно хватает одного разговора.' } },
+      { en: { label: 'Design',            desc: 'We design the full interface — no generic templates, no placeholders.' },
+        ru: { label: 'Дизайн',            desc: 'Проектируем полный интерфейс — без шаблонов и заглушек.' } },
+      { en: { label: 'Development',       desc: 'The entire team builds in parallel. Clean code, tested, production-ready.' },
+        ru: { label: 'Разработка',        desc: 'Вся команда строит параллельно. Чистый код, протестированный, готовый к запуску.' } },
+      { en: { label: 'Launch',            desc: 'We deploy, hand over, and stay available. The relationship does not end at launch.' },
+        ru: { label: 'Запуск',            desc: 'Деплоим, передаём, остаёмся на связи. Отношения не заканчиваются на запуске.' } },
+    ],
+  },
+  about: {
+    label:     { en: 'About',  ru: 'О нас' },
+    headline:  { en: 'Built in Almaty.\nBuilt to last.', ru: 'Сделано в Алматы.\nСделано надолго.' },
+    paragraph: { en: 'MTDev was founded in 2025 with one conviction: that speed and quality are not opposites. We are a team of seven specialists based in Almaty, working exclusively with businesses and startups who want a digital presence that performs at the highest level. We dedicate the full team to one client at a time — that is how we deliver in days without cutting corners.', ru: 'MTDev основана в 2025 году с одним убеждением: скорость и качество — не противоположности. Нас семь специалистов из Алматы. Мы работаем с бизнесом и стартапами, которым нужно цифровое присутствие на высшем уровне. Мы отдаём всю команду одному клиенту — именно поэтому сдаём за дни и без компромиссов.' },
+    statement: { en: 'Every project gets everyone.', ru: 'Каждый проект получает всю команду.' },
+    teamNote:  { en: '7 specialists · 1 project at a time · Almaty', ru: '7 специалистов · 1 проект одновременно · Алматы' },
+    learnMore: { en: 'Learn more →', ru: 'Подробнее →' },
+    stats: [
+      { value: '7',   label: { en: 'People on every project',  ru: 'Человек на каждом проекте' } },
+      { value: '2',   label: { en: 'Average days to delivery', ru: 'Средний срок сдачи в днях' } },
+      { value: '$1K', label: { en: 'Starting price',           ru: 'Стартовая цена' } },
+    ],
+  },
+  contact: {
+    label:    { en: 'Contact', ru: 'Контакт' },
+    headline: { en: "Let's build something.", ru: 'Давайте построим что-то.' },
+    sub:      { en: 'Tell us about your project. We work with businesses and startups, starting from $1,000. Most projects are delivered within a few days.', ru: 'Расскажите о своём проекте. Мы работаем с бизнесом и стартапами, от $1 000. Большинство проектов сдаём за несколько дней.' },
+    fields: {
+      name:    { en: 'Name',                ru: 'Имя' },
+      company: { en: 'Company',             ru: 'Компания' },
+      desc:    { en: 'Project description', ru: 'Описание проекта' },
+      budget:  { en: 'Budget',              ru: 'Бюджет' },
+    },
+    submit: { en: 'Send →',   ru: 'Отправить →' },
+    note:   { en: 'We respond within 24 hours.', ru: 'Мы отвечаем в течение 24 часов.' },
+    errors: {
+      required: { en: 'This field is required', ru: 'Обязательное поле' },
+    },
+  },
+  footer: {
+    tagline:   { en: 'Premium web. Delivered fast.', ru: 'Премиальный веб. Быстрая сдача.' },
+    copyright: { en: '© 2025 MTDev', ru: '© 2025 MTDev' },
+    privacy:   { en: 'Privacy Policy', ru: 'Политика конфиденциальности' },
+  },
+  work: {
+    label:   { en: 'Work',    ru: 'Работы' },
+    subtext: { en: 'Selected projects — 2025', ru: 'Избранные проекты — 2025' },
+  },
+  case: {
+    challenge:  { en: 'Challenge',   ru: 'Задача' },
+    solution:   { en: 'Solution',    ru: 'Решение' },
+    result:     { en: 'Result',      ru: 'Результат' },
+    visitSite:  { en: 'Visit site →', ru: 'Открыть сайт →' },
+    scrollHint: { en: '↓ Case study', ru: '↓ О проекте' },
+  },
+}

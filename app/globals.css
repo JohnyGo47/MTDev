@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #0A0A0A;
+  --bg-2:      #111111;
+  --fg:        #F0EDE8;
+  --fg-2:      #888888;
+  --fg-3:      #444444;
+  --orange:    #FF5500;
+  --orange-10: rgba(255, 85, 0, 0.10);
+  --orange-20: rgba(255, 85, 0, 0.20);
+  --border:    rgba(255, 255, 255, 0.07);
+  --grid-line: rgba(255, 255, 255, 0.04);
+
+  --text-xs:   11px;
+  --text-sm:   13px;
+  --text-base: 15px;
+  --text-lg:   18px;
+  --text-xl:   24px;
+  --text-2xl:  32px;
+  --text-3xl:  48px;
+  --text-hero: clamp(52px, 8vw, 108px);
+
+  --container: 1280px;
+  --gutter:    40px;
+  --section-v: 120px;
+
+  --ease:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out:  cubic-bezier(0.0, 0.0, 0.2, 1);
+  --dur-fast:  0.2s;
+  --dur-base:  0.4s;
+  --dur-slow:  0.7s;
+}
+
+[data-theme="light"] {
+  --bg:        #F5F2ED;
+  --bg-2:      #ECEAE5;
+  --fg:        #0A0A0A;
+  --fg-2:      #666666;
+  --fg-3:      #BBBBBB;
+  --border:    rgba(0, 0, 0, 0.07);
+  --grid-line: rgba(0, 0, 0, 0.04);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: none;
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-geist), -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+  transition: background var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
+  min-height: 100vh;
+}
+
+.mono {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+::selection {
+  background: var(--orange-20);
+}
+
+a {
+  cursor: none;
+}
+
+button {
+  cursor: none;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter:    20px;
+    --section-v: 80px;
+  }
+}

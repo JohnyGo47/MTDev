@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/about)",
+      "Bash(curl -s http://localhost:3000/work)",
+      "Bash(curl -s http://localhost:3000/work/squidwtf)",
+      "Bash(curl -s http://localhost:3000/contact)"
+    ]
+  }
+}
