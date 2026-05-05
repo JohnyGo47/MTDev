@@ -101,4 +101,33 @@ export const projects: Project[] = [
     },
     gridSize: 'wide',
   },
+  {
+    slug: 'coal-analytics',
+    name: 'CoalAnalytics',
+    url: '#',
+    screenshotPath: '/images/coal-analysis-vercel.png',
+    bgColor: '#0F0F14',
+    cardLabel: {
+      en: 'Real-time coal market analytics',
+      ru: 'Аналитика угольного рынка в реальном времени',
+    },
+    tags: ['Dashboard', 'Data', 'Analytics'],
+    oneLiner: {
+      en: 'A live analytics dashboard tracking coal trading volumes, prices, and market dynamics across Kazakhstan\'s ETS and Kaspi exchanges.',
+      ru: 'Live-дашборд для отслеживания объёмов торгов, цен и динамики рынка угля на биржах ETS и Kaspi Казахстана.',
+    },
+    challenge: {
+      en: 'Coal market data across ETS and Kaspi exchanges was fragmented and hard to interpret. Traders and analysts needed a unified, real-time view of volumes, prices, and market structure without digging through raw exchange data.',
+      ru: 'Данные угольного рынка Казахстана по биржам ETS и Kaspi были разрозненными и сложными для анализа. Трейдерам и аналитикам не хватало единой актуальной картины по объёмам, ценам и структуре рынка.',
+    },
+    solution: {
+      en: 'We built CoalAnalytics — a live dashboard that consolidates trading data from both exchanges into a single interface. Volume charts, price dynamics, monthly breakdowns, coal type structures, and buyer/seller metrics — all filterable by period and exchange, updating in real time.',
+      ru: 'Мы создали CoalAnalytics — live-дашборд, который собирает данные обеих бирж в одном интерфейсе. Объёмы торгов, ценовая динамика, помесячные разбивки, структура по типам угля и метрики покупателей — всё фильтруется по периоду и бирже и обновляется в реальном времени.',
+    },
+    result: {
+      en: 'A professional-grade analytics tool that gives Kazakhstan coal market participants a clear, unified view of trading activity they couldn\'t get anywhere else.',
+      ru: 'Профессиональный аналитический инструмент, который даёт участникам угольного рынка Казахстана чёткую единую картину торговой активности.',
+    },
+    gridSize: 'normal',
+  },
 ]

@@ -43,21 +43,30 @@ export function WorkCard({ project, lang, wide }: WorkCardProps) {
           }}
         />
 
-        {/* Subtle inner image container with scale */}
+        {/* Image with scale on hover */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
             transform: hovered ? 'scale(1.04)' : 'scale(1)',
             transition: 'transform 0.4s ease',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
           }}
         >
-          <div style={{ fontFamily: 'var(--font-geist-mono), monospace', fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.15)', userSelect: 'none' }}>
-            {project.name}
-          </div>
+          {project.screenshotPath ? (
+            <Image
+              src={project.screenshotPath}
+              alt={project.name}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          ) : (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+              <div style={{ fontFamily: 'var(--font-geist-mono), monospace', fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.15)', userSelect: 'none' }}>
+                {project.name}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Card info */}
