@@ -29,12 +29,12 @@ export function PageTransition({ children }: { children: React.ReactNode }) {
           exit="exit"
           style={{
             position: 'fixed',
-            top: '45vh',
+            top: 0,
             left: 0,
             width: '100%',
-            height: '3px',
+            height: '2px',
             background: 'var(--orange)',
-            zIndex: 9998,
+            zIndex: 9999,
             pointerEvents: 'none',
           }}
         />

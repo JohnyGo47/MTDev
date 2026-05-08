@@ -23,8 +23,8 @@
   --text-3xl:  48px;
   --text-hero: clamp(52px, 8vw, 108px);
 
-  --container: 1280px;
-  --gutter:    40px;
+  --container: 1520px;
+  --gutter:    60px;
   --section-v: 120px;
 
   --ease:      cubic-bezier(0.16, 1, 0.3, 1);
